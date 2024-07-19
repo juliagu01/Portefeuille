@@ -1,37 +1,37 @@
 <script setup>
-  import { ref } from 'vue'
-  import Thumbnail from '@/components/Thumbnail.vue'
-
-  const projects = ref(require('@/data/projectData.json'))
 </script>
 
 <template>
   <div id="home-view">
-    <div v-for="p in projects" :key="p" class="project">
-      <div class="content project-content">
-        <div class="text">
-          <h2>{{p.name}}</h2>
-          <p v-if="p.blurb">{{p.blurb}}</p>
-          <router-link :to="'/portfolio' + p.path">Explore</router-link>
-        </div>
-        <Thumbnail :filename="p.imgs[0].filename" />
-      </div>
-      <hr />
-    </div>
+    <h1>Hi, I'm Julia Gu</h1>
+    <h2>Photographer based in Los Angeles, CA</h2>
   </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .photo {
-    height: 250px;
+  #home-view {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
   }
 
-  .project-content {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 3em;
-    align-items: center;
+  h1, h2 {
+    margin: 0.1em;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+  h2 {
+    color: dimgray;
   }
 </style>
 
