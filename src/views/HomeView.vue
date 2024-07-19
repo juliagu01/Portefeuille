@@ -2,17 +2,7 @@
   import { ref } from 'vue'
   import Thumbnail from '@/components/Thumbnail.vue'
 
-  const projects = ref([
-    {
-      name: 'Placeholders',
-      imgs: ['0418', '0270', '0453']
-    },
-    {
-      name: 'For fun',
-      blurb: 'Just because.',
-      imgs: ['2818']
-    },
-  ])
+  const projects = ref(require('@/data/projectData.json'))
 </script>
 
 <template>
@@ -22,9 +12,9 @@
         <div class="text">
           <h2>{{p.name}}</h2>
           <p v-if="p.blurb">{{p.blurb}}</p>
-          <a>Explore</a>
+          <router-link :to="'/portfolio' + p.path">Explore</router-link>
         </div>
-        <Thumbnail :filename="p.imgs[0]" />
+        <Thumbnail :filename="p.imgs[0].filename" />
       </div>
       <hr />
     </div>

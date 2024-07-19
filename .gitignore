@@ -2,9 +2,10 @@ node_modules/*
 src/assets/*
 bin/*
 obj/*
-*.json*
+package*.json*
 *.njsproj*
-*.config.js*
+*config.js*
 *.sln
 .env
+.vs*
 .browserslistrc

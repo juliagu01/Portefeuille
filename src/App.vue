@@ -2,8 +2,7 @@
   <div id="app">
     <nav>
       <div id="page-links">
-        <router-link to="/">Home</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
+        <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path">{{ route.name }}</router-link>
       </div>
     </nav>
     <hr />
@@ -41,6 +40,7 @@
     color: gray;
     text-decoration: none;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .content {

@@ -28,9 +28,5 @@
     width: auto;
     height: auto;
   }
-
-    .photo:hover {
-      background-color: lightgray;
-    }
 </style>
 

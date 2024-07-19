@@ -1,0 +1,29 @@
+[
+  {
+    "path": "/placeholders",
+    "name": "Placeholders",
+    "imgs": [
+      {
+        "filename": "0418",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "0270"
+      },
+      {
+        "filename": "0453"
+      }
+    ]
+  },
+  {
+    "path": "/forfun",
+    "name": "For fun",
+    "blurb": "Just because.",
+    "imgs": [
+      {
+        "filename": "2818",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      }
+    ]
+  }
+]

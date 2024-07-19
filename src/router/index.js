@@ -2,18 +2,17 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
 
-const routes = [
+let routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Projects',
     component: HomeView
   },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: PortfolioView
-  },
 ]
+
+const projects = require('@/data/projectData.json')
+for (const project of projects)
+  routes.push({ path: '/projects' + project.path, name: project.name, component: PortfolioView, props: { photos: project.imgs } })
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

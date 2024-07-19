@@ -2,44 +2,26 @@
   import { ref } from 'vue'
   import Thumbnail from '@/components/Thumbnail.vue'
 
-  const photos = ref([
-    {
-      filename: '0418',
-      caption: 'Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet'
-    },
-    {
-      filename: '2818',
-      caption: 'Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet'
-    },
-    {
-      filename: '0270',
-    },
-    {
-      filename: '0453',
-    },
-  ])
-  const photo = ref()
+  const props = defineProps(['photos'])
+  const photoIndex = ref()
   const popup = ref(false);
-  function showPopup(p) {
-    photo.value = p;
-    popup.value = true;
-  }
 </script>
 
 <template>
-  <div v-if="popup" id="popup" @click="popup = false">
+  <div v-if="popup" id="popup">
     <div class="text">
-      <h2>Image {{photo.filename}}</h2>
-      <p v-if="photo.caption">{{photo.caption}}</p>
+      <h2>Image {{photos[photoIndex].filename}}</h2>
+      <p v-if="photos[photoIndex].caption">{{photos[photoIndex].caption}}</p>
       <div class="nav-buttons">
-        <a>Previous</a>
-        <a>Next</a>
+        <a @click="photoIndex ? photoIndex-- : 0">Previous</a>
+        <a @click="photoIndex < photos.length-1 ? photoIndex++ : 0">Next</a>
+        <a @click="popup = false">Close</a>
       </div>
     </div>
-    <Thumbnail :filename="photo.filename" />
+    <Thumbnail :filename="photos[photoIndex].filename" />
   </div>
   <div v-else id="portefeuille" class="content">
-    <Thumbnail v-for="p in photos" :key="p.filename" :filename="p.filename" @click="showPopup(p)" />
+    <Thumbnail v-for="(p, index) in photos" :key="p.filename" :filename="p.filename" @click="photoIndex = index; popup = true" />
   </div>
 </template>
 
@@ -52,6 +34,10 @@
     column-gap: 0.75em;
     row-gap: 0.75em;
   }
+
+    #portefeuille .photo {
+      cursor: pointer;
+    }
 
   #popup {
     position: fixed;
