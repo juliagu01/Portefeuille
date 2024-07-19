@@ -1,0 +1,10 @@
+node_modules/*
+src/assets/*
+bin/*
+obj/*
+*.json*
+*.njsproj*
+*.config.js*
+*.sln
+.env
+.browserslistrc
