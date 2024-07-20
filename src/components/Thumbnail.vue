@@ -12,21 +12,10 @@
 </script>
 
 <template>
-  <!--<div class="photo">-->
   <img :src="retrieveSrc()" :alt="filename" class="photo" />
-  <!--</div>-->
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .photo {
-    background-color: #f0f0f0;
-    /*border-radius: 10px;*/
-    box-sizing: border-box;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
 </style>
 

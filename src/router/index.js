@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import PortfolioView from '../views/PortfolioView.vue'
+import AboutView from '../views/AboutView.vue'
 
 let routes = [
   {
@@ -36,6 +37,14 @@ routes.push(
     name: 'Portfolio',
     component: PortfolioView,
     props: { photos: allImgs }
+  }
+)
+
+routes.push(
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutView
   }
 )
 

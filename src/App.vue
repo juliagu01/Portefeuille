@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav>
-      <div id="page-links">
+      <div class="links">
         <router-link v-for="route in $router.options.routes" :key="route.path" :to="route.path">{{ route.name }}</router-link>
       </div>
     </nav>
@@ -30,10 +30,14 @@
     align-items: center;
   }
 
-  #page-links {
+  .links {
     display: inline-flex;
     column-gap: 1em;
     margin: 10px 0px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
   }
 
   a {
@@ -44,9 +48,18 @@
   }
 
   .content {
-    margin: auto;
+    margin: 0 auto;
     width: 700px;
     padding: 1em;
+  }
+
+  img {
+    background-color: #f0f0f0;
+    /*border-radius: 10px;*/
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
 </style>
 

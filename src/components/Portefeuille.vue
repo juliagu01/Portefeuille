@@ -10,7 +10,8 @@
 <template>
   <div v-if="popup" id="popup">
     <div class="text">
-      <h2>Image {{photos[photoIndex].filename}}</h2>
+      <h2 v-if="photos[photoIndex].title">{{photos[photoIndex].title}}</h2>
+      <h2 v-else>Image {{photos[photoIndex].filename}}</h2>
       <p v-if="photos[photoIndex].caption">{{photos[photoIndex].caption}}</p>
       <div class="nav-buttons">
         <a @click="photoIndex ? photoIndex-- : 0">Previous</a>
@@ -28,15 +29,32 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   #portefeuille {
+    /*
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0.75em;
     row-gap: 0.75em;
+    column-gap: 0.75em;
+    */
+    /*
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 300px;
+    max-width: 100%;
+    row-gap: 0.75em;
+    column-gap: 0.75em;
+    */
+    columns: 3 auto;
+    column-gap: 0.75em;
   }
 
     #portefeuille .photo {
       cursor: pointer;
+      margin: 0.2em 0;
+      width: 100%;
     }
 
   #popup {
