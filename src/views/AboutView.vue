@@ -5,7 +5,7 @@
 <template>
   <div id="about-view">
     <div class="about-content content">
-      <Thumbnail id="self" filename="0418" />
+      <Thumbnail id="self" filename="IMG_2751.jpg" />
       <div class="text">
         <h3>Programmer by day, photographer by night.</h3>
         <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</p>
@@ -22,10 +22,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  #self {
-    border-radius: 100%;
-  }
-
   #about-view {
     position: absolute;
     top: 0px;

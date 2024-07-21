@@ -1,17 +1,89 @@
 [
   {
-    "path": "/placeholders",
-    "name": "Placeholders",
+    "path": "/westwood",
+    "name": "Westwood",
+    "blurb": "Time to explore.",
     "imgs": [
       {
-        "filename": "0418",
+        "filename": "DSC_7163.jpg",
+        "title": "Stuffed animals at the giftstore"
+      },
+      {
+        "filename": "DSC_7212.jpg",
+        "title": "Slow day at Brandy Melville",
         "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
       },
       {
-        "filename": "0270"
+        "filename": "DSC_7240.jpg",
+        "title": "Cold matcha cold brew at Junbi"
       },
       {
-        "filename": "0453"
+        "filename": "DSC_9759.jpg",
+        "title": "Fox Theater",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_9772.jpg",
+        "title": "Graffiti hearts in Westwood"
+      },
+      {
+        "filename": "DSC_9827.jpg",
+        "title": "Farmers market",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_9863.jpg",
+        "title": "Pigeons on Lindbrook Drive",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_9992.jpg",
+        "title": "Amnesty International at Westwood"
+      }
+    ]
+  },
+  {
+    "path": "/ucla",
+    "name": "UCLA",
+    "blurb": "Day in the life.",
+    "imgs": [
+      {
+        "filename": "DSC_3658.jpg",
+        "title": "Rosenfeld Library during finals week"
+      },
+      {
+        "filename": "DSC_3851.jpg",
+        "title": "Line at donut truck",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_8470.jpg",
+        "title": "Student at the Fielding School of Public Health"
+      },
+      {
+        "filename": "DSC_8603.jpg",
+        "title": "Student walking through Bunche Hall"
+      },
+      {
+        "filename": "DSC_8694.jpg",
+        "title": "Student at bus stop"
+      },
+      {
+        "filename": "DSC_8763.jpg",
+        "title": "Bike outside Bruin Plate"
+      },
+      {
+        "filename": "DSC_8809.jpg",
+        "title": "Students heading to the dorms after finals",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_8820.jpg",
+        "title": "Students heading to the dorms after finals 2"
+      },
+      {
+        "filename": "DSC_8894.jpg",
+        "title": "Student waiting for ride after finals"
       }
     ]
   },
@@ -21,8 +93,89 @@
     "blurb": "Just because.",
     "imgs": [
       {
-        "filename": "2818",
+        "filename": "DSC_2818.jpg",
+        "title": "Young lady in black",
         "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "DSC_2819.jpg",
+        "title": "Young lady in black 2"
+      }
+    ]
+  },
+  {
+    "path": "/quarantine",
+    "name": "Quarantine",
+    "blurb": "Me, myself, and I.",
+    "imgs": [
+      {
+        "filename": "4GuJ_Equality.jpg",
+        "title": "Two paper dolls sitting on a windowsill",
+        "caption": "Caption: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      },
+      {
+        "filename": "4GuJ_Self.jpg",
+        "title": "Reflection in glasses"
+      },
+      {
+        "filename": "IMG_0323.jpg",
+        "title": "Mug on a craft table"
+      },
+      {
+        "filename": "IMG_0461.jpg",
+        "title": "Ink stick and stone"
+      },
+      {
+        "filename": "IMG_0926.jpg",
+        "title": "Keyboard"
+      },
+      {
+        "filename": "IMG_1011.jpg",
+        "title": "Flowers at golden hour"
+      },
+      {
+        "filename": "IMG_1183.jpg",
+        "title": "Mug and reflection"
+      },
+      {
+        "filename": "IMG_1222.jpg",
+        "title": "Black on black"
+      },
+      {
+        "filename": "IMG_1328.jpg",
+        "title": "A blur"
+      },
+      {
+        "filename": "IMG_1349.jpg",
+        "title": "Japanese pumpkin"
+      },
+      {
+        "filename": "IMG_1482.jpg",
+        "title": "Stones and gingko berries"
+      },
+      {
+        "filename": "IMG_1571.jpg",
+        "title": "B for book"
+      },
+      {
+        "filename": "IMG_1650.jpg",
+        "title": "Bowl of apples"
+      },
+      {
+        "filename": "IMG_2086.jpg",
+        "title": "Washed Chinese chives"
+      },
+      {
+        "filename": "IMG_2741.jpg",
+        "title": "Calculator"
+      },
+      {
+        "filename": "IMG_2751.jpg",
+        "title": "Self"
+      },
+      {
+        "filename": "IMG_2766.jpg",
+        "title": "Mannequin posing for the mirror"
       }
     ]
   }

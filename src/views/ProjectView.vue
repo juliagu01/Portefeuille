@@ -32,6 +32,7 @@
     justify-content: space-between;
     column-gap: 3em;
     align-items: center;
+    width: 600px;
   }
 </style>
 

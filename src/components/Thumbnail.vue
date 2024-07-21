@@ -3,7 +3,7 @@
 
   function retrieveSrc() {
     try {
-      return require(`@/assets/DSC_${props.filename}.jpg`)
+      return require(`@/assets/${props.filename}`)
     }
     catch (error) {
       return ""

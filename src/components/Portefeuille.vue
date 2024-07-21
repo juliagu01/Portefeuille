@@ -5,17 +5,28 @@
   const props = defineProps(['photos'])
   const photoIndex = ref()
   const popup = ref(false);
+
+  function decIndex() {
+    photoIndex.value--
+    if (photoIndex.value < 0)
+      photoIndex.value = props.photos.length - 1
+  }
+  function incIndex() {
+    photoIndex.value++
+    if (photoIndex.value >= props.photos.length)
+      photoIndex.value = 0
+  }
 </script>
 
 <template>
-  <div v-if="popup" id="popup">
+  <div v-if="popup" id="popup" @click.self="popup = false" @keyup.left="decIndex()" @keyup.right="incIndex()" tabindex="0" autofocus>
     <div class="text">
       <h2 v-if="photos[photoIndex].title">{{photos[photoIndex].title}}</h2>
       <h2 v-else>Image {{photos[photoIndex].filename}}</h2>
       <p v-if="photos[photoIndex].caption">{{photos[photoIndex].caption}}</p>
       <div class="nav-buttons">
-        <a @click="photoIndex ? photoIndex-- : 0">Previous</a>
-        <a @click="photoIndex < photos.length-1 ? photoIndex++ : 0">Next</a>
+        <a @click="decIndex()">Previous</a>
+        <a @click="incIndex()">Next</a>
         <a @click="popup = false">Close</a>
       </div>
     </div>
